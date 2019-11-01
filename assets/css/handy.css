@@ -228,6 +228,7 @@ button:hover {
     height: 50px;
     margin-left: 20px;
     padding: 20px;
+    margin-top: -50px;
   }
   
   .item12 {
@@ -237,7 +238,7 @@ button:hover {
     height: 50px;
     margin-left: 20px;
     padding: 20px;
-
+    margin-top: -50px;
   }
   .item13 {
     grid-column: 4 / span 1;
@@ -246,7 +247,7 @@ button:hover {
     height: 50px;
     margin-left: 20px;
     padding: 20px;
-
+    margin-top: -50px;
   }
   /*pagebreak*/
   .item19{
@@ -261,14 +262,14 @@ button:hover {
     grid-row: 9;
     padding: 50px;
   }
-  /*breadcrumb*/
+  /*footer*/
   .item15 {
     grid-column: 1 / span 5;
     grid-row: 10;
     padding: 10px;
     background-color: #222931;
   }
-  /*text breadcrumb*/
+  /*text footer*/
   .item16{
     grid-column: 4 / span 1;
     grid-row: 10;
@@ -286,7 +287,23 @@ button:hover {
     grid-row: 9;
     padding: 50px;
   }
-
+/*breadcrumb*/
+  ul.breadcrumb li {
+    display: inline;
+    font-size: 12px;
+    font-weight: 400;
+    color: #aeb6be;
+  }
+  ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: ">\00a0";
+  }
+  
+  ul.breadcrumb li a:hover {
+    color: black;
+    text-decoration: underline;
+  }
   /*text "diensten"*/
   .item20{
     grid-column: 2 / span 3;
