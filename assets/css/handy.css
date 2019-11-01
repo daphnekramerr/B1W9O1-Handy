@@ -3,9 +3,6 @@
     grid-template-columns: auto auto auto;
   }
   
-  .grid-item {
-    border: 1px solid rgba(255, 255, 255, 0.8);
-  }
 
 body{
   font-family: 'Archivo', sans-serif;
@@ -80,6 +77,44 @@ body{
     grid-column: 1 / span 5;
     grid-row: 3;
   }
+
+  .container {
+    position: relative;
+    width: 100%;
+  }
+  
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #222931;
+  }
+  
+  .container:hover .overlay {
+    opacity: 0.8;
+  }
+  
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
 /*Foto 1 */
   .item4 {
     grid-column: 2 / span 1;
@@ -130,10 +165,10 @@ body{
     font-weight: 700;
     color: #222931;
   }
+  /*button*/
 .item18{
   grid-column: 4 / span 5;
   grid-row: 5;
-  border: 0px;
   padding: 30px 120px;
 }
 button{
@@ -152,34 +187,38 @@ button:hover {
     grid-row: 6;
 
   }
+  .container:hover .item11 {
+    background-color: #222931;
+    color: white;
+  }
 /*titels in footer*/
   .titel{
     color: #222931;
     margin-top: -60px;
     margin-left: 80px;
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 600;
   }
   .textfooter1{
     margin-top: -20px;
     margin-left: 80px;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 18px;
-    font-weight: 400;
+    font-weight: 600;
   }
   .textfooter2{
     margin-left: 80px;
     margin-top: -20px;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 18px;
-    font-weight: 400;
+    font-weight: 600;
   }
   .textfooter3{
     margin-left: 80px;
     margin-top: -20px;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 18px;
-    font-weight: 400;
+    font-weight: 600;
   }
 /*footer*/
   .item11 {
@@ -190,6 +229,7 @@ button:hover {
     margin-left: 20px;
     padding: 20px;
   }
+  
   .item12 {
     grid-column: 3 / span 1;
     grid-row: 7;
@@ -208,32 +248,48 @@ button:hover {
     padding: 20px;
 
   }
+  /*pagebreak*/
+  .item19{
+    grid-column: 1 / span 5;
+    grid-row: 9;
+    padding: 25px;
+  }
 
 /*text "Over ons"*/
   .item14 {
     grid-column: 2 / span 2;
-    grid-row: 8;
-    padding: 10px;
+    grid-row: 9;
+    padding: 50px;
   }
   /*breadcrumb*/
   .item15 {
     grid-column: 1 / span 5;
-    grid-row: 9;
+    grid-row: 10;
     padding: 10px;
     background-color: #222931;
   }
   /*text breadcrumb*/
   .item16{
     grid-column: 4 / span 1;
-    grid-row: 9;
+    grid-row: 10;
     text-align: right;
     color: white;
     border: 0px;
+    text-align: right;
     font-size: 12px;
     font-weight: 400;
+    padding: 20px;
   }
   /* text "contact"*/
   .item17 {
     grid-column: 4 / span 1;
-    grid-row: 8;
+    grid-row: 9;
+    padding: 50px;
+  }
+
+  /*text "diensten"*/
+  .item20{
+    grid-column: 2 / span 3;
+    grid-row: 4;
+    padding: 20px;
   }
