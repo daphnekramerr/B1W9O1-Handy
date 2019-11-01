@@ -20,10 +20,61 @@ body{
     grid-column: 2 / span 3;
     grid-row: 2;
     background-color: #222931;
-    padding: 20px;
     width: 950px;
 
+  }.navbar {
+    overflow: hidden;
+    background-color: #222931
   }
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  .dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #ffe718;
+    color: black;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    }
+  .dropdown-content a {
+    float: none;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  .dropdown-content a:hover {
+    background-color: #ffe718;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
 /*Header */
   .item3 {
     grid-column: 1 / span 5;
@@ -67,6 +118,7 @@ body{
     border: 0px;
     font-size: 34px;
     font-weight: 700;
+    color: #222931;
   }
 /*text ribbon*/
   .item9{
@@ -76,7 +128,24 @@ body{
     padding: 34px;
     font-size: 16px;
     font-weight: 700;
+    color: #222931;
   }
+.item18{
+  grid-column: 4 / span 5;
+  grid-row: 5;
+  border: 0px;
+  padding: 30px 120px;
+}
+button{
+  background-color: white;
+  padding: 10px 24px;
+  border: 0px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #222931;
+  color: white;
+}
 /*footer*/
   .item10 {
     grid-column: 1 / span 5;
@@ -85,8 +154,32 @@ body{
   }
 /*titels in footer*/
   .titel{
-    color: black;
-    text-align: center;
+    color: #222931;
+    margin-top: -60px;
+    margin-left: 80px;
+    font-size: 24px;
+    font-weight: 600;
+  }
+  .textfooter1{
+    margin-top: -20px;
+    margin-left: 80px;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+  }
+  .textfooter2{
+    margin-left: 80px;
+    margin-top: -20px;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+  }
+  .textfooter3{
+    margin-left: 80px;
+    margin-top: -20px;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
   }
 /*footer*/
   .item11 {
@@ -144,9 +237,3 @@ body{
     grid-column: 4 / span 1;
     grid-row: 8;
   }
-
-  i.fas,
-  i.far {
-    font-size: 50px;
-    color: black;  
-}
