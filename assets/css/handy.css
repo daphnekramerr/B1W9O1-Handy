@@ -18,6 +18,7 @@ body{
     grid-row: 2;
     background-color: #222931;
     width: 950px;
+    z-index: 2;
 
   }.navbar {
     overflow: hidden;
@@ -55,7 +56,6 @@ body{
     background-color: black;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
     }
   .dropdown-content a {
     float: none;
@@ -76,6 +76,8 @@ body{
   .item3 {
     grid-column: 1 / span 5;
     grid-row: 3;
+    z-index: 1;
+    margin-top: -20px;
   }
 
   .container {
@@ -164,6 +166,7 @@ body{
     font-size: 16px;
     font-weight: 700;
     color: #222931;
+    margin-left: 40px;
   }
   /*button*/
 .item18{
@@ -198,6 +201,19 @@ button:hover {
     margin-left: 80px;
     font-size: 22px;
     font-weight: 600;
+  }
+  .item12:hover{
+    color:white;
+    background: black;
+  }
+  .container:hover .titel{
+    color: white;
+  }
+  .container:hover .textfooter2{
+    color: white;
+  }
+  .container:hover .fas{
+    color: white;
   }
   .textfooter1{
     margin-top: -20px;
@@ -309,4 +325,19 @@ button:hover {
     grid-column: 2 / span 3;
     grid-row: 4;
     padding: 20px;
+  }
+  .hovertext {
+    background-color: #aeb6be;
+    padding: 10px;
+    display: none;
+    color: white;
+  }
+    
+  .hoverword:hover + div {
+    display: inline-block;
+    width: 200px;
+    position: absolute;
+  }
+  .hoverword{
+    color: #ffe718;
   }
