@@ -97,8 +97,8 @@ body{
     bottom: 0;
     left: 0;
     right: 0;
-    height: 100%;
-    width: 100%;
+    height: 99%;
+    width: 94%;
     opacity: 0;
     transition: .5s ease;
     background-color: #222931;
@@ -166,10 +166,9 @@ body{
     font-size: 16px;
     font-weight: 700;
     color: #222931;
-    margin-left: 40px;
   }
   /*button*/
-.item18{
+.item10{
   grid-column: 4 / span 5;
   grid-row: 5;
   padding: 30px 120px;
@@ -179,20 +178,18 @@ button{
   padding: 10px 24px;
   border: 0px;
   cursor: pointer;
+  font-size: 12px;
+  font-weight: 500;
 }
 button:hover {
   background-color: #222931;
   color: white;
 }
 /*footer*/
-  .item10 {
+  .item11 {
     grid-column: 1 / span 5;
     grid-row: 6;
 
-  }
-  .container:hover .item11 {
-    background-color: #222931;
-    color: white;
   }
 /*titels in footer*/
   .titel{
@@ -202,7 +199,7 @@ button:hover {
     font-size: 22px;
     font-weight: 600;
   }
-  .item12:hover{
+  .item13:hover{
     color:white;
     background: black;
   }
@@ -237,7 +234,7 @@ button:hover {
     font-weight: 600;
   }
 /*footer*/
-  .item11 {
+  .item12 {
     grid-column: 2 / span 1;
     grid-row: 7;
     background-color: #ffe718;
@@ -245,9 +242,10 @@ button:hover {
     margin-left: 20px;
     padding: 20px;
     margin-top: -50px;
+    width:300px;
   }
   
-  .item12 {
+  .item13 {
     grid-column: 3 / span 1;
     grid-row: 7;
     background-color: #ffe718;
@@ -255,8 +253,9 @@ button:hover {
     margin-left: 20px;
     padding: 20px;
     margin-top: -50px;
+    width:300px;
   }
-  .item13 {
+  .item14 {
     grid-column: 4 / span 1;
     grid-row: 7;
     background-color: #ffe718;
@@ -264,29 +263,30 @@ button:hover {
     margin-left: 20px;
     padding: 20px;
     margin-top: -50px;
+    width:300px;
   }
   /*pagebreak*/
-  .item19{
+  .item15{
     grid-column: 1 / span 5;
     grid-row: 9;
     padding: 25px;
   }
 
 /*text "Over ons"*/
-  .item14 {
+  .item16 {
     grid-column: 2 / span 2;
     grid-row: 9;
     padding: 50px;
   }
   /*footer*/
-  .item15 {
+  .item17 {
     grid-column: 1 / span 5;
     grid-row: 10;
     padding: 10px;
     background-color: #222931;
   }
   /*text footer*/
-  .item16{
+  .item18{
     grid-column: 4 / span 1;
     grid-row: 10;
     text-align: right;
@@ -298,7 +298,7 @@ button:hover {
     padding: 20px;
   }
   /* text "contact"*/
-  .item17 {
+  .item19 {
     grid-column: 4 / span 1;
     grid-row: 9;
     padding: 50px;
